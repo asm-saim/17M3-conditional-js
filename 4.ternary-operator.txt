@@ -1,0 +1,80 @@
+========================
+JavaScript Ternary Operator
+========================
+
+# Ternary Operator
+Short form of if-else.
+
+Syntax:
+condition ? trueResult : falseResult
+
+# Example 1
+let age = 19;
+
+age >= 18 ? console.log("You can vote") : console.log("You can not vote");
+
+Output:
+You can vote
+
+# Normal if-else Version
+if (age >= 18) {
+    console.log("You can vote");
+}
+else {
+    console.log("You are not eligible");
+}
+
+# Example 2
+let price = 500;
+let isLeader = true;
+
+price = isLeader === false
+? 0
+: price + 100;
+
+console.log(price);
+
+Output:
+600
+
+# Logic
+- If isLeader is false → price = 0
+- Otherwise → add 100
+
+# Example 3 (Nested Ternary)
+let cost = 1500;
+let isMP = true;
+
+cost = isMP === true
+? cost >= 1000
+    ? cost / 2
+    : cost
+: cost + 100;
+
+console.log(cost);
+
+Output:
+750
+
+# Nested Ternary Meaning
+If isMP is true:
+    If cost >= 1000:
+        divide by 2
+    Else:
+        keep same
+Else:
+    add 100
+
+# Important Notes
+- Ternary operator works with 3 parts:
+  1. Condition
+  2. True result
+  3. False result
+
+- Good for short conditions
+- Avoid very complex nested ternary for readability
+
+# Best Practice
+Use:
+- if-else for complex logic
+- ternary for short/simple conditions
