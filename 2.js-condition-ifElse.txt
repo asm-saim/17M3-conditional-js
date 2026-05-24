@@ -1,0 +1,90 @@
+========================
+JavaScript Condition (if-else)
+========================
+
+# if Statement
+Used to run code only when a condition is true.
+
+Syntax:
+if (condition) {
+   // code
+}
+
+# if-else Statement
+Used when there are two possible outcomes.
+
+Syntax:
+if (condition) {
+   // runs if condition is true
+}
+else {
+   // runs if condition is false
+}
+
+# Example 1
+var apple = 50;
+
+if (apple >= 50) {
+   console.log("Let's donate these fruits");
+}
+
+Output:
+Let's donate these fruits
+
+# Example 2
+var weight = 10;
+
+if (weight < 20) {
+   console.log("I will carry it");
+}
+else {
+   console.log("I will rent a rickshaw");
+}
+
+Output:
+I will carry it
+
+# Example 3
+let a = 100;
+
+if (a >= 100) {
+   console.log("You can buy it");
+}
+else {
+   console.log("Let's go elsewhere");
+}
+
+Output:
+You can buy it
+
+# Comparison Operators Used in Conditions
+>   Greater than
+<   Less than
+>=  Greater than or equal
+<=  Less than or equal
+==  Equal
+=== Strict equal
+!=  Not equal
+!== Strict not equal
+
+# Variable Types
+1. var
+- Old way to declare variable
+
+2. let
+- Value can change
+
+Example:
+let score = 50;
+score = 70;
+
+3. const
+- Value cannot be changed
+
+Example:
+const country = "Bangladesh";
+
+# Best Practice
+- Use let for changing values
+- Use const for fixed values
+- Prefer === instead of ==
