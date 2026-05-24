@@ -31,3 +31,36 @@ console.log(result);
 //     result= num1 + num2;
 //     console.log(result);
 // }
+
+
+/***
+
+Ticket fare Calculator
+    - Children (age < 10): free
+    - Students get a 50% discount
+    - Senior citizens (age >= 60) gets a 15% Discount
+    - Otherwise Regular ticket fare 800 tk
+*/
+
+let category = "Senior Citizen";
+let age = 75;
+let ticket = 800;
+if(category==="Children" && age<10)
+{
+    console.log("Free ticket!");    
+}
+else if (category==="Student")
+{
+     let discount=ticket * 50/100;
+     let pay = ticket-discount;
+    console.log("Pay Amount:",pay)
+}
+else if (category==="Senior Citizen" && age>=60)
+{
+    let discount=ticket * 15/100;
+    let pay = ticket - discount;
+    console.log("Pay Amount:",pay);
+}
+else{
+    console.log("Pay Amount 800tk");
+}
