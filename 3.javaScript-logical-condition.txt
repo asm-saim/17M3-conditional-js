@@ -1,0 +1,91 @@
+========================
+JavaScript Logical Conditions
+========================
+
+# Logical Operators
+Used to combine multiple conditions.
+
+&&  AND  (all conditions must be true)
+||  OR   (at least one condition must be true)
+!   NOT  (reverses condition)
+
+# AND (&&)
+All conditions must be TRUE.
+
+Example:
+const weight = 70;
+const height = 6;
+
+if (weight <= 70 && height >= 6) {
+    console.log("BMI is ok");
+}
+else {
+    console.log("BMI is not good");
+}
+
+Output:
+BMI is ok
+
+Meaning:
+- weight must be <= 70
+- height must be >= 6
+- both must be true
+
+# OR (||)
+At least ONE condition must be TRUE.
+
+Example:
+let age = 60;
+let pressure = 130;
+
+if (age <= 70 || pressure <= 120) {
+    console.log("BMI is ok");
+}
+else {
+    console.log("BMI is not good");
+}
+
+Output:
+BMI is ok
+
+# Multiple OR Conditions
+
+const ball = 40;
+const bat = 10;
+const cap = 30;
+
+if (ball >= 30 || bat >= 20 || cap > 40) {
+    console.log("Let's go to the field");
+}
+else {
+    console.log("Take rest");
+}
+
+Output:
+Let's go to the field
+
+# Multiple AND + OR Combined
+
+Example:
+if ((bat >= 10 && cap >= 30) || ball >= 20) {
+    console.log("Playground is calling");
+}
+else {
+    console.log("Stay at Home");
+}
+
+Output:
+Playground is calling
+
+# Important Notes
+- && = strict condition (all must be true)
+- || = flexible condition (any one true is enough)
+- Use () to control priority in complex conditions
+
+# Common Mistake in Your Code
+
+Wrong:
+console.log*("Take rest")
+
+Correct:
+console.log("Take rest")
