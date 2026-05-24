@@ -1,0 +1,73 @@
+========================
+JavaScript Logical NOT (!)
+========================
+
+# Boolean Values
+JavaScript has two boolean values:
+- true
+- false
+
+# Checking Boolean Directly
+
+const price = 300;
+const isDiscount = true;
+
+if (isDiscount) {
+    console.log("This is discounted product");
+}
+else {
+    console.log("No Discount");
+}
+
+Output:
+This is discounted product
+
+# Shortcut
+Instead of:
+if (isDiscount === true)
+
+We can write:
+if (isDiscount)
+
+Because isDiscount already stores true/false.
+
+# Logical NOT (!)
+! reverses boolean values.
+
+Examples:
+!true  = false
+!false = true
+
+# Example 2
+
+const food = 300;
+const isSafe = false;
+
+if (!isSafe) {
+    console.log("Do not buy");
+}
+else {
+    console.log("You can buy");
+}
+
+Output:
+Do not buy
+
+# Meaning of !isSafe
+isSafe = false
+
+!isSafe = true
+
+So the if block runs.
+
+# Double NOT (!!)
+Used to convert value into boolean.
+
+Examples:
+!!true  = true
+!!false = false
+
+# Best Practice
+- if(value) → checks truthy value
+- if(!value) → checks falsy value
+- Use ! to reverse conditions

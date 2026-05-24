@@ -1,0 +1,2 @@
+assignment operator = = assigns value, not compares
+comparison operator : == === !=	!==	>	<	>=	
