@@ -2,7 +2,7 @@
 
 // 1. greater than >
 // 2. less than <
-// 3. equal = 
+// 3. equal == , === 
 // 4. greater equal >=
 // 5. less equal <=
 

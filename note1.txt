@@ -1,2 +1,13 @@
-assignment operator = = assigns value, not compares
+assignment operator( = ) assigns value, not compares
 comparison operator : == === !=	!==	>	<	>=	
+
+We should use strict comparison operator -> === value + type.
+
+// ternary condition
+condition ? yes result  : no result
+age>=18 ? console.log("you can vote") : console.log("You can not vote");
+
+//shortHand
+if(isDiscount===true)
+or, 
+if(isDiscount)
